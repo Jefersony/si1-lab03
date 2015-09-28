@@ -2,20 +2,13 @@
 #{set title:'Home' /}
 
 #{if frontPost}
-
-    #{display post:frontPost, as:'home' /}
-
-    #{if olderPosts.size()}
-
-        <div class="older-posts">
-            <h3>Older posts <span class="from">from this blog</span></h3>
-
-            #{list items:olderPosts, as:'oldPost'}
-                #{display post:oldPost, as:'teaser' /}
-            #{/list}
-        </div>
-
-    #{/if}
+    <div class="older-posts">
+        <h3>Older posts <span class="from">from this blog</span></h3>
+        #{display post:frontPost, as:'teaser'/}
+        #{list items:olderPosts, as:'oldPost'}
+            #{display post:oldPost, as:'teaser' /}
+        #{/list}
+    </div>
 
 #{/if}
 

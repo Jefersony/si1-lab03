@@ -28,25 +28,11 @@ Tag(test):
 Tag(mvc):
     name:           MVC    
     
-Post(firstBobPost):
-    title:          Sobre o nosso serviço
-    postedAt:       2009-06-14
-    author:         bob
-    tags:           
-                    - play
-                    - architecture
-    content:        >
-                    O Find Bandmate (Encontre Musicos) foi criado com o propósito de disponibilizar um meio mais fácil
-                    de se formar bandas. 
-                    
-                    Através do sistema de anúncios que o site dispõe, vários músicos de várias partes
-                    do mundo podem se comunicar de maneira prática e, o melhor de tudo, ao necessitar de um instrumentista específico
-                    para uma determinada ocasião, uma solicitação específica pode ser feita através dos anúncios.    
 
-Post(secondBobPost):
+Post(firstPost):
     title:          Procuro baterista - CZ
     postedAt:       2009-03-25
-    author:         bob
+    author:         paul
     tags:           
                     - test
     content:        >
