@@ -20,7 +20,7 @@
  
 #{display post:post, as:'full' /}
 
-<h3>Post a comment</h3>
+<h3>Deixe um comentario</h3>
  
 #{form @Application.postComment(post.id)}
  
@@ -31,15 +31,15 @@
     #{/ifErrors}
  
     <p>
-        <label for="author">Your name: </label>
+        <label for="author">Seu nome: </label>
         <input type="text" name="author" id="author" value="${params.author}" />
     </p>
     <p>
-        <label for="content">Your message: </label>
+        <label for="content">Seu comentario: </label>
         <textarea name="content" id="content">${params.content}</textarea>
     </p>
     <p>
-        <label for="code">Please type the code below: </label>
+        <label for="code">Por favor, digite o codigo abaixo: </label>
         <img src="@{Application.captcha(randomID)}" />
         <br />
         <input type="text" name="code" id="code" size="18" value="" />
