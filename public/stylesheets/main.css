@@ -48,6 +48,10 @@ body {
     color: #fff;
     text-decoration: none;
 }
+#tools a:HOVER{
+    color: green;
+    font: bold;
+}
 
 #title {
     background: #B8C569;

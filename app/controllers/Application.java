@@ -60,5 +60,13 @@ public class Application extends Controller {
         List<Post> posts = Post.findTaggedWith(tag);
         render(tag, posts);
     }
+    
+    public static void newUser() {
+        render("Application/newUser.html");   
+    }
+    
+    public static void addNewUser(Long id, String email, String password, String fullname) {
+        User user = new User(email, password, fullname);
+    }
  
 }
