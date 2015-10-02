@@ -21,7 +21,7 @@
     </p>
     <p>
         <label for="password">Password: </label>
-        <input type="text" name="password" id="password" value="${params.password}"/>
+        <input type="password" name="password" id="password" value="${params.password}"/>
     </p>
     
     <p>
@@ -32,9 +32,13 @@
         <input type="hidden" name="randomID" value="${randomID}" />
     </p>
     <p>
-        <input type="submit" value="Submit your comment" />
+        <input type="submit" value="Cadastrar" />
     </p>
 #{/form}
+
+<p>
+    <input type="submit" value="Limpar Entradas" id="limpar">
+</p>
 
 <script type="text/javascript" charset="${_response_encoding}">
     $(function() {         
@@ -48,5 +52,11 @@
             $('form').expose({api: true, loadSpeed: 0}).load(); 
             $('form input[type=text]').get(0).focus();
         }
+    });
+    
+    $('#limpar').click(function(){
+        $('#fullname').val("");
+        $('#email').val("");
+        $('#password').val("");
     });
 </script>

@@ -65,9 +65,17 @@ public class Application extends Controller {
         render("Application/newUser.html");   
     }
     
-    public static void addNewUser(Long id, String email, String password, String fullname) {
+    public static void addNewUser(Long id, 
+           @Required(message="Email necessario") String email, 
+           @Required(message="Senha necessaria") String password, 
+           @Required(message="Nome necessario") String fullname) {
         User user = new User(email, password, fullname);
+        if(validation.hasErrors()) {
+            render("Application/newUser.html", user);
+        }
         user.save();
+        render("Application/newUser.html");
+        
     }
  
 }
