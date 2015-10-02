@@ -1,6 +1,10 @@
 #{extends 'main.html' /}
 #{set title:'Novo Usuario' /}
 
+#{if flash.success}
+    <p class="success">${flash.success}</p>
+#{/if}
+
 <h3>Novo Usuario</h3>
  
 #{form @Application.addNewUser()}
@@ -58,5 +62,6 @@
         $('#fullname').val("");
         $('#email').val("");
         $('#password').val("");
+        $('.success').hide();
     });
 </script>

@@ -74,8 +74,8 @@ public class Application extends Controller {
             render("Application/newUser.html", user);
         }
         user.save();
+        flash.success("Obrigado por se cadastrar, %s.", fullname);
         render("Application/newUser.html");
-        
     }
  
 }
