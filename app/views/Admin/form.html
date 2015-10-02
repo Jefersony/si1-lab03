@@ -1,23 +1,23 @@
 #{extends 'admin.html' /}
  
 #{ifnot post?.id}
-    <h3>Write, <span>a new post</span></h3>
+    <h3>Escreva, <span>um novo anuncio</span></h3>
 #{/ifnot}
 #{else}
-    <h3>Edit, <span>this post</span></h3>
+    <h3>Edite, <span>este anuncio</span></h3>
 #{/else}
  
 #{form @save(post?.id)}
  
     #{ifErrors}
         <p class="error">
-            Please correct these errors.
+            Por favor, corrija estes erros.
         </p>
     #{/ifErrors}
      
     <p>
         #{field 'title'}
-        <label>Post title:</label>
+        <label>Titulo:</label>
         <input type="text" name="${field.name}" 
            value="${post?.title}" />
         <span class="error">#{error 'post.title'/}</span>
@@ -26,7 +26,7 @@
  
     <p>
         #{field 'content'}
-        <label>Write here:</label>
+        <label>Escreva aqui:</label>
         <textarea name="${field.name}">
           ${post?.content}
         </textarea>
@@ -36,14 +36,14 @@
  
     <p>
         #{field 'tags'}
-        <label>Enter some tags:</label>
+        <label>Colocar tags:</label>
         <input type="text" size="50" 
             name="${field.name}" value="${post?.tags?.join(' ')}" />
         #{/field}
     </p>
     
     <p>
-        <input type="submit" value="Publish this post to the blog" />
+        <input type="submit" value="Publicar anuncio no site" />
     </p>
     
 #{/form}
