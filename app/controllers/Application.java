@@ -67,6 +67,7 @@ public class Application extends Controller {
     
     public static void addNewUser(Long id, String email, String password, String fullname) {
         User user = new User(email, password, fullname);
+        user.save();
     }
  
 }

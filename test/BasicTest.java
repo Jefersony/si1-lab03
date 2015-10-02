@@ -1,10 +1,13 @@
 import org.junit.*;
+
 import java.util.*;
+
 import play.test.*;
 import models.*;
  
 public class BasicTest extends UnitTest {
     
+    @SuppressWarnings("deprecation")
     @Before
     public void setup() {
         Fixtures.deleteAll();
@@ -123,6 +126,7 @@ public class BasicTest extends UnitTest {
         assertEquals(0, Comment.count());
     }
     
+    @SuppressWarnings("deprecation")
     @Test
     public void fullTest() {
         Fixtures.load("data.yml");
