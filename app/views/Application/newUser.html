@@ -40,11 +40,22 @@
     </p>
 #{/form}
 
+#{if flash.success}
+    <script>
+        $(function(){
+        $('#fullname').val("");
+        $('#email').val("");
+        $('#password').val("");
+    });
+    </script>
+#{/if}
+
 <p>
     <input type="submit" value="Limpar Entradas" id="limpar">
 </p>
 
 <script type="text/javascript" charset="${_response_encoding}">
+    
     $(function() {         
         // Expose the form 
         $('form').click(function() { 
