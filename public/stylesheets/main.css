@@ -295,6 +295,14 @@ form input, form textarea {
     font-size: 14px;
 }
 
+form input:read-write {
+    width: 40%;
+}
+
+form input:-moz-read-write {
+    width: 40%;
+}
+
 form label {
     display: block;
     font-weight: bold;
