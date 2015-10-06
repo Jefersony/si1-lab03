@@ -2,11 +2,13 @@ package controllers;
 
 import play.*;
 import play.mvc.*;
+import play.utils.HTML;
 import play.data.validation.*;
 import play.libs.*;
 import play.cache.*;
- 
+
 import java.util.*;
+
 import models.*;
  
 public class Application extends Controller {
@@ -68,14 +70,22 @@ public class Application extends Controller {
     public static void addNewUser(Long id, 
            @Required(message="Email necessario") String email, 
            @Required(message="Senha necessaria") String password, 
-           @Required(message="Nome necessario") String fullname) {
+           @Required(message="Nome necessario") String fullname,
+           @Required(message="Digite o password novamente") String segundoPassword) {
         User user = new User(email, password, fullname);
+        if( !(password.equals(segundoPassword))){
+            //flash.success("O segundo password nao esta igual ao primeiro%s", ".");
+            flash.error("O segundo password nao esta igual ao primeiro.");
+            render("Application/newUser.html", user);
+            return;
+        }
         if(validation.hasErrors()) {
             render("Application/newUser.html", user);
         }
         user.save();
         flash.success("Obrigado por se cadastrar, %s.", fullname);
         render("Application/newUser.html");
+        
     }
  
 }

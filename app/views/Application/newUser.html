@@ -5,6 +5,10 @@
     <p class="success">${flash.success}</p>
 #{/if}
 
+#{if flash.error}
+    <p class="error">${flash.error}</p>
+#{/if}
+
 <h3>Novo Usuario</h3>
  
 #{form @Application.addNewUser()}
@@ -27,6 +31,10 @@
         <label for="password">Password: </label>
         <input type="password" name="password" id="password" value="${params.password}"/>
     </p>
+    <p>
+        <label for="segundoPassword">Digite o password novamente: </label>
+        <input type="password" name="segundoPassword" id="segundoPassword" value="${params.segundoPassword}"/>
+    </p>
     
     <p>
         <label for="code">Por favor, digite o codigo abaixo: </label>
@@ -46,6 +54,7 @@
         $('#fullname').val("");
         $('#email').val("");
         $('#password').val("");
+        $('#segundoPassword').val("");
     });
     </script>
 #{/if}

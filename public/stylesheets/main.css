@@ -317,6 +317,15 @@ form label {
     -webkit-box-shadow: 0 2px 0 #4E840B; 
 }
 
+.error {
+    background: red;
+    color: #fff;
+    padding: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-box-shadow: 0 2px 0 #4E840B;
+}
+
 /** Pagination **/
 
 #pagination {
