@@ -7,8 +7,16 @@ import play.data.binding.*;
 import play.data.validation.*;
 import play.db.jpa.Model;
 
+// Analogamente: Anuncio
 @Entity
 public class Post extends Model {
+	
+	public String cidade;
+	public String bairro;
+	public String strInstrumentos;
+	public String strEstilosQueGosta;
+	public String strEstilosQueNaoGosta;
+	public boolean procuraBanda; // false = tocar ocasionalmente
  
     @Required
     public String title;
@@ -19,7 +27,7 @@ public class Post extends Model {
     @Lob
     @Required
     @MaxSize(10000)
-    public String content;
+    public String content; // descricao
     
     @Required
     @ManyToOne

@@ -1,256 +1,40 @@
-05 Out 2015 02:07:44,745 INFO  ~ Starting C:\Play\Playcomgit\lab2
-05 Out 2015 02:07:45,205 INFO  ~ Module crud is available (C:\play1-1.3.0\modules\crud)
-05 Out 2015 02:07:45,205 INFO  ~ Module secure is available (C:\play1-1.3.0\modules\secure)
-05 Out 2015 02:07:46,355 WARN  ~ You're running Play! in DEV mode
-05 Out 2015 02:07:46,450 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-05 Out 2015 02:08:16,162 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL for default
-05 Out 2015 02:08:17,291 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
-05 Out 2015 02:08:17,292 ERROR ~ Table "COMMENT" not found; SQL statement:
+08 Out 2015 00:18:26,386 INFO  ~ Starting C:\Play\Playcomgit\lab2\.
+08 Out 2015 00:18:27,286 INFO  ~ Module crud is available (C:\play1-1.3.0\modules\crud)
+08 Out 2015 00:18:27,288 INFO  ~ Module secure is available (C:\play1-1.3.0\modules\secure)
+08 Out 2015 00:18:28,919 WARN  ~ You're running Play! in DEV mode
+08 Out 2015 00:18:36,948 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL for default
+08 Out 2015 00:18:38,866 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+08 Out 2015 00:18:38,867 ERROR ~ Table "COMMENT" not found; SQL statement:
 alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
-05 Out 2015 02:08:17,292 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
-05 Out 2015 02:08:17,293 ERROR ~ Table "POST" not found; SQL statement:
+08 Out 2015 00:18:38,867 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+08 Out 2015 00:18:38,867 ERROR ~ Table "POST" not found; SQL statement:
 alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
-05 Out 2015 02:08:17,293 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
-05 Out 2015 02:08:17,293 ERROR ~ Table "POST_TAG" not found; SQL statement:
+08 Out 2015 00:18:38,867 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
+08 Out 2015 00:18:38,867 ERROR ~ Table "POST_TAG" not found; SQL statement:
 alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
-05 Out 2015 02:08:17,294 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
-05 Out 2015 02:08:17,294 ERROR ~ Table "POST_TAG" not found; SQL statement:
+08 Out 2015 00:18:38,868 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
+08 Out 2015 00:18:38,868 ERROR ~ Table "POST_TAG" not found; SQL statement:
 alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
-05 Out 2015 02:08:17,410 INFO  ~ Application 'Find Bandmate' is now started !
-05 Out 2015 02:08:24,523 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
-05 Out 2015 02:08:36,368 ERROR ~ 
-
-@6nkcem9e5
-Internal Server Error (500) for request GET /admin
-
-Execution exception (In /app/controllers/Admin.java around line 18)
-NullPointerException occured : Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-
-play.exceptions.JavaExecutionException: Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
-	at Invocation.HTTP Request(Play!)
-Caused by: java.lang.NullPointerException: Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:214)
-	at controllers.Admin.setConnectedUser(Admin.java:18)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:477)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
-	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:311)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:141)
-	... 1 more
-05 Out 2015 02:08:47,602 ERROR ~ 
-
-@6nkcem9e6
-Internal Server Error (500) for request GET /admin
-
-Execution exception (In /app/controllers/Admin.java around line 18)
-NullPointerException occured : Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-
-play.exceptions.JavaExecutionException: Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
-	at Invocation.HTTP Request(Play!)
-Caused by: java.lang.NullPointerException: Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:214)
-	at controllers.Admin.setConnectedUser(Admin.java:18)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:477)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
-	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:311)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:141)
-	... 1 more
-05 Out 2015 02:14:42,719 ERROR ~ 
-
-@6nkcem9ed
-Internal Server Error (500) for request GET /admin
-
-Execution exception (In /app/controllers/Admin.java around line 18)
-NullPointerException occured : Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-
-play.exceptions.JavaExecutionException: Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
-	at Invocation.HTTP Request(Play!)
-Caused by: java.lang.NullPointerException: Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:214)
-	at controllers.Admin.setConnectedUser(Admin.java:18)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:477)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
-	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:311)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:141)
-	... 1 more
-05 Out 2015 02:15:09,183 ERROR ~ 
-
-@6nkcem9ee
-Internal Server Error (500) for request GET /admin
-
-Execution exception (In /app/controllers/Admin.java around line 18)
-NullPointerException occured : Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-
-play.exceptions.JavaExecutionException: Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
-	at Invocation.HTTP Request(Play!)
-Caused by: java.lang.NullPointerException: Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:214)
-	at controllers.Admin.setConnectedUser(Admin.java:18)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:477)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
-	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:311)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:141)
-	... 1 more
-05 Out 2015 02:28:20,084 ERROR ~ 
-
-@6nkcem9el
-Internal Server Error (500) for request GET /admin
-
-Execution exception (In /app/controllers/Admin.java around line 18)
-NullPointerException occured : Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-
-play.exceptions.JavaExecutionException: Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
-	at Invocation.HTTP Request(Play!)
-Caused by: java.lang.NullPointerException: Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:214)
-	at controllers.Admin.setConnectedUser(Admin.java:18)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:477)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
-	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:311)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:141)
-	... 1 more
-05 Out 2015 02:35:19,992 ERROR ~ 
-
-@6nkcem9ep
-Internal Server Error (500) for request GET /admin
-
-Execution exception (In /app/controllers/Admin.java around line 18)
-NullPointerException occured : Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-
-play.exceptions.JavaExecutionException: Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:228)
-	at Invocation.HTTP Request(Play!)
-Caused by: java.lang.NullPointerException: Try to read fullname on null object models.User (controllers.Admin.setConnectedUser, line 18)
-	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:214)
-	at controllers.Admin.setConnectedUser(Admin.java:18)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:477)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
-	at play.mvc.ActionInvoker.handleBefores(ActionInvoker.java:311)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:141)
-	... 1 more
-05 Out 2015 02:40:30,127 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
-05 Out 2015 02:40:30,127 ERROR ~ Table "COMMENT" not found; SQL statement:
-alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
-05 Out 2015 02:40:30,128 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
-05 Out 2015 02:40:30,128 ERROR ~ Table "POST" not found; SQL statement:
-alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
-05 Out 2015 02:40:30,129 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
-05 Out 2015 02:40:30,129 ERROR ~ Table "POST_TAG" not found; SQL statement:
-alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
-05 Out 2015 02:40:30,129 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
-05 Out 2015 02:40:30,130 ERROR ~ Table "POST_TAG" not found; SQL statement:
-alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
-05 Out 2015 02:40:31,920 ERROR ~ 
-
-@6nkcem9f1
-Internal Server Error (500) for request GET /admin
-
-Execution exception (In /app/controllers/Security.java around line 13)
-NullPointerException occured : Try to read isAdmin on null object models.User (controllers.Security.check, line 13)
-
-play.exceptions.JavaExecutionException: Try to read isAdmin on null object models.User (controllers.Security.check, line 13)
-	at play.templates.BaseTemplate.throwException(BaseTemplate.java:90)
-	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:285)
-	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:414)
-	at /app/views/admin.html.(line:32)
-	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:260)
-	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:295)
-	at play.templates.Template.render(Template.java:26)
-	at play.templates.GroovyTemplate.render(GroovyTemplate.java:208)
-	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
-	at play.mvc.Controller.renderTemplate(Controller.java:676)
-	at play.mvc.Controller.renderTemplate(Controller.java:656)
-	at play.mvc.Controller.render(Controller.java:713)
-	at controllers.Admin.index(Admin.java:24)
-	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
-	at Invocation.HTTP Request(Play!)
-Caused by: java.lang.NullPointerException: Try to read isAdmin on null object models.User (controllers.Security.check, line 13)
-	at play.classloading.enhancers.PropertiesEnhancer$FieldAccessor.invokeReadProperty(PropertiesEnhancer.java:214)
-	at controllers.Security.check(Security.java:13)
-	at play.utils.Java.invokeStaticOrParent(Java.java:187)
-	at play.utils.Java.invokeChildOrStatic(Java.java:209)
-	at controllers.Secure$Security.invoke(Secure.java:203)
-	at {module:secure}/app/views/tags/secure/check.tag.(line:1)
-	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:260)
-	... 17 more
-05 Out 2015 02:40:50,911 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
-05 Out 2015 02:40:50,912 ERROR ~ Table "COMMENT" not found; SQL statement:
-alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
-05 Out 2015 02:40:50,912 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
-05 Out 2015 02:40:50,912 ERROR ~ Table "POST" not found; SQL statement:
-alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
-05 Out 2015 02:40:50,912 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
-05 Out 2015 02:40:50,913 ERROR ~ Table "POST_TAG" not found; SQL statement:
-alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
-05 Out 2015 02:40:50,913 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
-05 Out 2015 02:40:50,913 ERROR ~ Table "POST_TAG" not found; SQL statement:
-alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
-05 Out 2015 02:40:51,008 ERROR ~ 
-
-@6nkcem9f2
-Error during job execution (Bootstrap)
-
-Execution exception (In /app/Bootstrap.java around line 13)
-RuntimeException occured : Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
-
-play.exceptions.JavaExecutionException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
-	at play.jobs.Job.call(Job.java:208)
-	at Invocation.Job(Play!)
-Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
-	at play.test.Fixtures.loadModels(Fixtures.java:270)
-	at play.test.Fixtures.loadModels(Fixtures.java:170)
-	at play.test.Fixtures.load(Fixtures.java:160)
-	at Bootstrap.doJob(Bootstrap.java:13)
-	at play.jobs.Job.doJobWithResult(Job.java:53)
-	at play.jobs.Job$2.apply(Job.java:196)
-	at play.db.jpa.JPA.withTransaction(JPA.java:234)
-	at play.db.jpa.JPA.withinFilter(JPA.java:195)
-	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
-	at play.jobs.Job.withinFilter(Job.java:175)
-	at play.jobs.Job.call(Job.java:194)
-	... 1 more
-Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
-	at play.test.Fixtures.loadModels(Fixtures.java:221)
-	... 11 more
-05 Out 2015 02:40:51,072 ERROR ~ 
-
-@6nkcem9f3
-Internal Server Error (500) for request GET /
-
-Oops: RuntimeException
-An unexpected error occured caused by exception RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
-
-play.exceptions.UnexpectedException: Unexpected Error
-	at play.jobs.Job.onException(Job.java:156)
-	at play.jobs.Job.call(Job.java:216)
-	at Invocation.Job(Play!)
-Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
-	at play.test.Fixtures.loadModels(Fixtures.java:270)
-	at play.test.Fixtures.loadModels(Fixtures.java:170)
-	at play.test.Fixtures.load(Fixtures.java:160)
-	at Bootstrap.doJob(Bootstrap.java:13)
-	at play.jobs.Job.doJobWithResult(Job.java:53)
-	at play.jobs.Job$2.apply(Job.java:196)
-	at play.db.jpa.JPA.withTransaction(JPA.java:234)
-	at play.db.jpa.JPA.withinFilter(JPA.java:195)
-	at play.db.jpa.JPAPlugin$TransactionalFilter.withinFilter(JPAPlugin.java:299)
-	at play.jobs.Job.withinFilter(Job.java:175)
-	at play.jobs.Job.call(Job.java:194)
-	... 1 more
-Caused by: java.lang.RuntimeException: Cannot load fixture initial-data.yml, duplicate id 'bob' for type models.User
-	at play.test.Fixtures.loadModels(Fixtures.java:221)
-	... 11 more
+08 Out 2015 00:18:39,098 INFO  ~ Application 'Find Bandmate' is now started !
+08 Out 2015 00:18:40,441 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+08 Out 2015 00:18:40,980 ERROR ~ HHH000231: Schema export unsuccessful
+org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.message.DbException.get(DbException.java:143)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1468)
+	at org.h2.jdbc.JdbcConnection.checkClosed(JdbcConnection.java:1443)
+	at org.h2.jdbc.JdbcConnection.getAutoCommit(JdbcConnection.java:446)
+	at com.mchange.v2.c3p0.impl.NewProxyConnection.getAutoCommit(NewProxyConnection.java:1226)
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:52)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.<init>(DatabaseExporter.java:52)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:367)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.drop(SchemaExport.java:318)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.drop(SchemaExport.java:314)
+	at org.hibernate.internal.SessionFactoryImpl.close(SessionFactoryImpl.java:1401)
+	at org.hibernate.ejb.EntityManagerFactoryImpl.close(EntityManagerFactoryImpl.java:208)
+	at play.db.jpa.JPAPlugin.onApplicationStop(JPAPlugin.java:274)
+	at play.plugins.PluginCollection.onApplicationStop(PluginCollection.java:528)
+	at play.Play.stop(Play.java:577)
+	at play.Play$1.run(Play.java:470)

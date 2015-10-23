@@ -42,8 +42,28 @@
         #{/field}
     </p>
     
+    <p id="dadosEspecificos">
+    	<label>Cidade:</label><input type="text" id="cidade" name="cidade">
+    	<label>Bairro:</label><input type="text" id="bairro" name="bairro">
+    	<label>Instrumentos que toca:</label>
+    			<input type="text" id="strInstrumentos" name="strInstrumentos">
+    	<label>Estilos que gosta:</label>
+    			<input type="text" id="strEstilosQueGosta" name="strEstilosQueGosta">
+    	<label>Estilos que nao gosta:</label>
+    			<input type="text" id="strEstilosQueNaoGosta" name="strEstilosQueNaoGosta">
+    	<br>
+    	<form id="formProcuraBanda">
+    		<label>Tipo do acordo:</label>
+		  <input type="radio" name="procuraBanda" value="true" >Procuro Banda
+		  <br>
+		  <input type="radio" name="procuraBanda" value="false">Tocar Ocasionalmente
+		</form>
+    </p>
+    
     <p>
         <input type="submit" value="Publicar anuncio no site" />
     </p>
     
 #{/form}
+
+
