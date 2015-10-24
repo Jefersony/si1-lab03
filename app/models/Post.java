@@ -10,8 +10,9 @@ import play.db.jpa.Model;
 // Analogamente: Anuncio
 @Entity
 public class Post extends Model {
-	
+	@Required
 	public String cidade;
+	@Required
 	public String bairro;
 	public String strInstrumentos;
 	public String strEstilosQueGosta;
@@ -46,6 +47,18 @@ public class Post extends Model {
         this.title = title;
         this.content = content;
         this.postedAt = new Date();
+    }
+    
+    public Post(User author, String title, String content, 
+    		String cidade, String bairro, String strInstrumentos, 
+    		String strEstilosQueGosta, String strEstilosQueNaoGosta, boolean procuraBanda) {
+    	this(author, title, content);
+    	this.cidade = cidade;
+    	this.bairro = bairro;
+    	this.strInstrumentos = strInstrumentos;
+    	this.strEstilosQueGosta = strEstilosQueGosta;
+    	this.strEstilosQueNaoGosta = strEstilosQueNaoGosta;
+    	this.procuraBanda = procuraBanda;
     }
     
     public Post addComment(String author, String content) {

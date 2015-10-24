@@ -42,23 +42,39 @@
         #{/field}
     </p>
     
-    <p id="dadosEspecificos">
-    	<label>Cidade:</label><input type="text" id="cidade" name="cidade">
-    	<label>Bairro:</label><input type="text" id="bairro" name="bairro">
-    	<label>Instrumentos que toca:</label>
-    			<input type="text" id="strInstrumentos" name="strInstrumentos">
-    	<label>Estilos que gosta:</label>
-    			<input type="text" id="strEstilosQueGosta" name="strEstilosQueGosta">
-    	<label>Estilos que nao gosta:</label>
-    			<input type="text" id="strEstilosQueNaoGosta" name="strEstilosQueNaoGosta">
-    	<br>
-    	<form id="formProcuraBanda">
-    		<label>Tipo do acordo:</label>
-		  <input type="radio" name="procuraBanda" value="true" >Procuro Banda
-		  <br>
-		  <input type="radio" name="procuraBanda" value="false">Tocar Ocasionalmente
-		</form>
+    <p>
+    	#{field 'cidade'}
+    	<label>Cidade:</label>
+    	<input type="text" id="cidade" name="${field.name}" value="${post?.cidade}"/>
+    	#{/field}
+    	#{field 'bairro'}
+    	<label>Bairro:</label>
+    	<input type="text" id="bairro" name="${field.name}" value="${post?.bairro}"/>
+    	#{/field}
     </p>
+    <p>
+    	#{field 'strInstrumentos'}
+    	<label>Instrumentos que toca:</label>
+    		<input type="text" id="strInstrumentos" name="${field.name}" value="${post?.strInstrumentos}"/>
+    	#{/field}
+    	#{field 'strEstilosQueGosta'}
+    	<label>Estilos que gosta:</label>
+    		<input type="text" id="strEstilosQueGosta" 
+    		  name="${field.name}" value="${post?.strEstilosQueGosta}"/>
+    	#{/field}
+    	#{field 'strEstilosQueNaoGosta'}
+    	<label>Estilos que nao gosta:</label>
+    		<input type="text" id="strEstilosQueNaoGosta" 
+    		  name="${field.name}" value="${post?.strEstilosQueNaoGosta}"/>
+    	#{/field}
+    </p>
+   	<br>
+   	<p id="formProcuraBanda">
+   		<label>Tipo do acordo:</label>
+	  <input type="radio" name="procuraBanda" value="true" >Procuro Banda
+	  <br>
+	  <input type="radio" name="procuraBanda" value="false">Tocar Ocasionalmente
+	</p>
     
     <p>
         <input type="submit" value="Publicar anuncio no site" />

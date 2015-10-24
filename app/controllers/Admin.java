@@ -3,9 +3,9 @@ package controllers;
 import play.*;
 import play.mvc.*;
 import play.data.validation.*;
- 
+
 import java.util.*;
- 
+
 import models.*;
  
 @With(Secure.class)
@@ -32,18 +32,57 @@ public class Admin extends Controller {
         render();
     }
     
-    public static void save(Long id, String title, String content, String tags) {
+//    public static void save(Long id, String title, String content, String tags) {
+//        Post post;
+//        if(id == null) {
+//            // Create post
+//            User author = User.find("byEmail", Security.connected()).first();
+//            post = new Post(author, title, content);
+//        } else {
+//            // Retrieve post
+//            post = Post.findById(id);
+//            post.title = title;
+//            post.content = content;
+//            post.tags.clear();
+//        }
+//        // Set tags list
+//        for(String tag : tags.split("\\s+")) {
+//            if(tag.trim().length() > 0) {
+//                post.tags.add(Tag.findOrCreateByName(tag));
+//            }
+//        }
+//        // Validate
+//        validation.valid(post);
+//        if(validation.hasErrors()) {
+//            render("@form", post);
+//        }
+//        // Save
+//        post.save();
+//        index();
+//    }
+    
+    public static void save(Long id, String title, String content, String tags,
+    		String cidade, String bairro, String strInstrumentos, 
+    		String strEstilosQueGosta, String strEstilosQueNaoGosta, boolean procuraBanda) {
         Post post;
         if(id == null) {
             // Create post
             User author = User.find("byEmail", Security.connected()).first();
-            post = new Post(author, title, content);
+            post = new Post(author, title, content, 
+            		        cidade, bairro, strInstrumentos, strEstilosQueGosta, strEstilosQueNaoGosta, procuraBanda);
         } else {
             // Retrieve post
             post = Post.findById(id);
             post.title = title;
             post.content = content;
             post.tags.clear();
+            post.cidade = cidade;
+            post.bairro = bairro;
+            post.strInstrumentos = strInstrumentos;
+            post.strEstilosQueGosta = strEstilosQueGosta;
+            post.strEstilosQueNaoGosta = strEstilosQueNaoGosta;
+            post.procuraBanda = true;
+            System.out.println("todos os params ok.");
         }
         // Set tags list
         for(String tag : tags.split("\\s+")) {
