@@ -29,6 +29,23 @@
             <div class="about">Detalhes: </div>
             ${_post.content.nl2br()}
         </div>
+       
+        	<h2 style="color: #F5C2CC;">Informacoes do anunciante:</h2>
+        <p id="infoPost">
+        	<label >Cidade: </label>
+        	<span >${_post.cidade.nl2br()}</span>
+        	<label >|  Bairro: </label>
+        	<span >${_post.bairro.nl2br()}</span>
+        	<label >|  Instrumentos: </label>
+        	<span >${_post.strInstrumentos.nl2br()}</span>
+        	<br><br>
+        	<label ">Estilos que gosta: </label><br>
+        	<span >${_post.strEstilosQueGosta.nl2br()}</span>
+        	<br><br>
+        	<label ">Estilos que nao gosta: </label><br>
+        	<span >${_post.strEstilosQueNaoGosta.nl2br()}</span>
+        </p>
+        
     #{/if}
 </div>
  

@@ -157,6 +157,25 @@ body {
 	left: 24px;
 }
 
+#infoPost {
+	position: relative;
+    background: #93A045;
+    padding: 10px;
+    margin: 10px 0 50px 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-box-shadow: 0 2px 0 #BBBBBB;
+}
+
+#infoPost label{
+	text-transform: uppercase;
+	color: white;
+}
+#infoPost span{
+	color: #227;
+	font-weight: bold;
+}
+
 
 /** Older posts **/
 

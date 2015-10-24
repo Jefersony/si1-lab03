@@ -82,7 +82,6 @@ public class Admin extends Controller {
             post.strEstilosQueGosta = strEstilosQueGosta;
             post.strEstilosQueNaoGosta = strEstilosQueNaoGosta;
             post.procuraBanda = true;
-            System.out.println("todos os params ok.");
         }
         // Set tags list
         for(String tag : tags.split("\\s+")) {
