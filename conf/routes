@@ -27,3 +27,5 @@ GET     /public/                                staticDir:public
 *       /{controller}/{action}                  {controller}.{action}
 
 GET     /newuser                                Application.newUser
+
+GET 	/buscar 			Application.buscar

@@ -84,8 +84,16 @@ public class Application extends Controller {
         }
         user.save();
         flash.success("Obrigado por se cadastrar, %s.", fullname);
-        render("Application/newUser.html");
-        
+        render("Application/newUser.html");   
     }
+    
+    public static void mostrarPaginaBusca() {
+    	render("Application/buscar.html");
+	}
+    
+    public static void buscar(String tag) {
+		List<Post> listaPosts = Post.findTaggedWith(tag);
+		render(listaPosts, tag);
+	}
  
 }

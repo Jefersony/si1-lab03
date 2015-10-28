@@ -1,0 +1,37 @@
+#{extends 'main.html' /}
+#{set title:'Buscar' /}
+
+#{form @Application.buscar()}
+	<span style="color:white">Pesquisar por palavras-chave (tags): </span>
+	<input type="text" name="tag" id="tag" value="${params.tag}"/>
+	<input type="submit" value="Buscar">
+	
+#{/form}
+
+<div class="older-posts" >
+#{if listaPosts == null}
+
+#{/if}
+
+#{else}
+
+	#{if listaPosts.size() > 1}
+	   <h3>Ha ${listaPosts.size()} anuncios rotulados como '${tag}'</h3>
+	   #{list items:listaPosts, as:'pst'}
+            #{display post:pst, as:'teaser' /}
+       #{/list}  
+	#{/if}
+	 
+	#{elseif listaPosts}
+	    <h3>Ha 1 anuncio rotulado como '${tag}'</h3>
+        #{display post:listaPosts[0], as:'teaser'/}
+	#{/elseif}
+	
+	#{else}
+	    <h3>Nao ha anuncios rotulados como '${tag}'</h3>
+	#{/else}
+
+#{/else}
+
+</div>
+
