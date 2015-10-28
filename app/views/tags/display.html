@@ -39,11 +39,19 @@
         	<label >|  Instrumentos: </label>
         	<span >${_post.strInstrumentos.nl2br()}</span>
         	<br><br>
-        	<label ">Estilos que gosta: </label><br>
+        	<label ">Estilos que gosta: </label>
         	<span >${_post.strEstilosQueGosta.nl2br()}</span>
         	<br><br>
-        	<label ">Estilos que nao gosta: </label><br>
+        	<label ">Estilos que nao gosta: </label>
         	<span >${_post.strEstilosQueNaoGosta.nl2br()}</span>
+        	<br><br>
+        	<label>Status: </label>
+        	#{if _post.procuraBanda}
+        		<span>Procurando tocar em banda</span>
+        	#{/if}
+        	#{else}
+        		<span>Procurando tocar ocasionalmente</span>
+        	#{/else}
         </p>
         
     #{/if}
