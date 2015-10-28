@@ -70,10 +70,12 @@
     </p>
    	<br>
    	<p id="formProcuraBanda">
-   		<label>Tipo do acordo:</label>
-	  <input type="radio" name="procuraBanda" value="true" >Procuro Banda
+   	  #{field 'procuraBanda'}
+   	  <label>Tipo do acordo:</label>
+	  <input type="radio" name="${field.name}" value="${post?.procuraBanda='true'}">Procuro Banda
 	  <br>
-	  <input type="radio" name="procuraBanda" value="false">Tocar Ocasionalmente
+	  <input type="radio" name="${field.name}" value="${post?.procuraBanda='false'}">Tocar Ocasionalmente
+	  #{/field}
 	</p>
     
     <p>

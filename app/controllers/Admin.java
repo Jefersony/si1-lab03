@@ -32,44 +32,15 @@ public class Admin extends Controller {
         render();
     }
     
-//    public static void save(Long id, String title, String content, String tags) {
-//        Post post;
-//        if(id == null) {
-//            // Create post
-//            User author = User.find("byEmail", Security.connected()).first();
-//            post = new Post(author, title, content);
-//        } else {
-//            // Retrieve post
-//            post = Post.findById(id);
-//            post.title = title;
-//            post.content = content;
-//            post.tags.clear();
-//        }
-//        // Set tags list
-//        for(String tag : tags.split("\\s+")) {
-//            if(tag.trim().length() > 0) {
-//                post.tags.add(Tag.findOrCreateByName(tag));
-//            }
-//        }
-//        // Validate
-//        validation.valid(post);
-//        if(validation.hasErrors()) {
-//            render("@form", post);
-//        }
-//        // Save
-//        post.save();
-//        index();
-//    }
-    
     public static void save(Long id, String title, String content, String tags,
     		String cidade, String bairro, String strInstrumentos, 
-    		String strEstilosQueGosta, String strEstilosQueNaoGosta, boolean procuraBanda) {
+    		String strEstilosQueGosta, String strEstilosQueNaoGosta, String procuraBanda) {
         Post post;
         if(id == null) {
             // Create post
             User author = User.find("byEmail", Security.connected()).first();
             post = new Post(author, title, content, 
-            		        cidade, bairro, strInstrumentos, strEstilosQueGosta, strEstilosQueNaoGosta, procuraBanda);
+            		        cidade, bairro, strInstrumentos, strEstilosQueGosta, strEstilosQueNaoGosta, Boolean.valueOf(procuraBanda));
         } else {
             // Retrieve post
             post = Post.findById(id);
@@ -81,7 +52,8 @@ public class Admin extends Controller {
             post.strInstrumentos = strInstrumentos;
             post.strEstilosQueGosta = strEstilosQueGosta;
             post.strEstilosQueNaoGosta = strEstilosQueNaoGosta;
-            post.procuraBanda = true;
+            post.procuraBanda = Boolean.valueOf(procuraBanda);
+            //System.out.println(post.procuraBanda + " - s:" + procuraBanda);
         }
         // Set tags list
         for(String tag : tags.split("\\s+")) {
