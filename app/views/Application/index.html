@@ -18,9 +18,14 @@
 #{if frontPost}
     <div class="older-posts">
         <h3>Lista de anuncios <span class="from">deste site</span></h3>
-        #{display post:frontPost, as:'teaser'/}
+        <h3><span class="from">${olderPosts.size() + 1} anuncios ja ajudaram as pessoas cadastradas neste site.</span></h3>
+        #{if frontPost.finalizado == false}
+            #{display post:frontPost, as:'teaser'/}
+        #{/if}
         #{list items:olderPosts, as:'oldPost'}
-            #{display post:oldPost, as:'teaser' /}
+        	#{if oldPost.finalizado == false}
+                #{display post:oldPost, as:'teaser' /}
+            #{/if}
         #{/list}
     </div>
 

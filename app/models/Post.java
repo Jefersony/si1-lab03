@@ -18,6 +18,7 @@ public class Post extends Model {
 	public String strEstilosQueGosta;
 	public String strEstilosQueNaoGosta;
 	public boolean procuraBanda; // false = tocar ocasionalmente
+	public boolean finalizado;
  
     @Required
     public String title;
@@ -47,6 +48,7 @@ public class Post extends Model {
         this.title = title;
         this.content = content;
         this.postedAt = new Date();
+        finalizado = false;
     }
     
     public Post(User author, String title, String content, 

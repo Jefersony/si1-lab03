@@ -34,7 +34,7 @@ public class Admin extends Controller {
     
     public static void save(Long id, String title, String content, String tags,
     		String cidade, String bairro, String strInstrumentos, 
-    		String strEstilosQueGosta, String strEstilosQueNaoGosta, String procuraBanda) {
+    		String strEstilosQueGosta, String strEstilosQueNaoGosta, String procuraBanda, String finalizado) {
         Post post;
         if(id == null) {
             // Create post
@@ -53,7 +53,8 @@ public class Admin extends Controller {
             post.strEstilosQueGosta = strEstilosQueGosta;
             post.strEstilosQueNaoGosta = strEstilosQueNaoGosta;
             post.procuraBanda = Boolean.valueOf(procuraBanda);
-            //System.out.println(post.procuraBanda + " - s:" + procuraBanda);
+            post.finalizado = Boolean.valueOf(finalizado);
+            System.out.println(post.finalizado + " - s:" + finalizado);
         }
         // Set tags list
         for(String tag : tags.split("\\s+")) {

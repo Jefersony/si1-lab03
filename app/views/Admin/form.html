@@ -67,6 +67,10 @@
     		<input type="text" id="strEstilosQueNaoGosta" 
     		  name="${field.name}" value="${post?.strEstilosQueNaoGosta}"/>
     	#{/field}
+    	<br><br>
+    	#{field 'finalizado'}
+    	<label>Finalizar anuncio <input type="checkbox" name="${field.name}" value="${post?.finalizado='true'}"/></label>
+    	#{/field}
     </p>
    	<br>
    	<p id="formProcuraBanda">

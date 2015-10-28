@@ -32,6 +32,10 @@
        
         	<h2 style="color: #F5C2CC;">Informacoes do anunciante:</h2>
         <p id="infoPost">
+        	#{if _post.finalizado}
+        		<label style="color:red;background:black;padding-left:39%;padding-right:39%">
+        		    <strong>Anuncio Finalizado</strong></label><br><br>
+        	#{/if}
         	<label >Cidade: </label>
         	<span >${_post.cidade.nl2br()}</span>
         	<label >|  Bairro: </label>

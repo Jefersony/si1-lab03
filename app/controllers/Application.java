@@ -68,9 +68,9 @@ public class Application extends Controller {
     }
     
     public static void addNewUser(Long id, 
+    	   @Required(message="Nome necessario") String fullname,
            @Required(message="Email necessario") String email, 
-           @Required(message="Senha necessaria") String password, 
-           @Required(message="Nome necessario") String fullname,
+           @Required(message="Senha necessaria") String password,
            @Required(message="Digite o password novamente") String segundoPassword) {
         User user = new User(email, password, fullname);
         if( !(password.equals(segundoPassword))){
