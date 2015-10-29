@@ -1,0 +1,296 @@
+# Test data
+
+User(jeferson):
+    email:          jeferson@gmail.com
+    password:       secret
+    fullname:       Jeferson
+    
+Tag(guitarra):
+    name:           Guitarra
+    
+Post(jefersonPost):
+    title:          Procuro contra-baixista - CG 
+    postedAt:       2015-10-06
+    author:         jeferson
+    tags:           
+                    - guitarra
+                    
+    content:        >
+                    Estou querendo formar uma banda aqui em Campina Grande - PB.
+                    O gênero é rock alternativo e já tenho uma vocalista e um baterista pra banda. Sou o guitarrista.
+                    Assim precisamos que alguém que toca baixo e estiver interessado em ingressar numa banda se manifeste.
+                    Estaremos esperando.
+                    
+    cidade:         Campina Grande
+    bairro:         Prata
+    strInstrumentos: Guitarra
+    strEstilosQueGosta: Rock, Pop, Eletronica
+    strEstilosQueNaoGosta: Funk, Axe, Pagode
+    procuraBanda:   true
+    
+    
+    
+User(vinicius):
+    email:          vinicius@gmail.com
+    password:       secret
+    fullname:       Vinicius
+    
+Tag(baixo):
+    name:           Baixo
+    
+Post(viniciusPost):
+    title:          Procuro guitarrista pra banda 
+    postedAt:       2015-10-07
+    author:         vinicius
+    tags:           
+                    - baixo
+                    
+    content:        >
+                    Estou querendo formar uma banda. Ja tenho alguns companheiros 
+                    que concordaram fazer uma parceria, mas ainda ha vagas no grupo. 
+                    
+    cidade:         Bom Jesus
+    bairro:         Centro
+    strInstrumentos: Baixo
+    strEstilosQueGosta: Rock, Pop, Eletronica
+    strEstilosQueNaoGosta: Funk, Axe, Pagode
+    procuraBanda:   true
+    
+Comment(comAtViniciusPost):
+    author:         Lauro
+    postedAt:       2015-10-08
+    content:        >
+                    Ola. Estou interessado em ingressar na banda. Meu cel eh (83) XXXXX-XXXX.
+    post:           viniciusPost
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+User(usuario1):
+    email:        usuario1@gmail.com
+    password:        secret
+    fullname:        User_usuario1
+
+Post(usuario1Post):
+    title:        Titulo 1
+    postedAt:        2015-10-1
+    author:        usuario1
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 1.
+    cidade:         Cidade 1
+    bairro:        Bairro 1
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+
+
+
+User(usuario2):
+    email:        usuario2@gmail.com
+    password:        secret
+    fullname:        User_usuario2
+
+Post(usuario2Post):
+    title:        Titulo 2
+    postedAt:        2015-10-2
+    author:        usuario2
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 2.
+    cidade:         Cidade 2
+    bairro:        Bairro 2
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+
+
+
+User(usuario3):
+    email:        usuario3@gmail.com
+    password:        secret
+    fullname:        User_usuario3
+
+Post(usuario3Post):
+    title:        Titulo 3
+    postedAt:        2015-10-3
+    author:        usuario3
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 3.
+    cidade:         Cidade 3
+    bairro:        Bairro 3
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+
+
+
+User(usuario4):
+    email:        usuario4@gmail.com
+    password:        secret
+    fullname:        User_usuario4
+
+Post(usuario4Post):
+    title:        Titulo 4
+    postedAt:        2015-10-4
+    author:        usuario4
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 4.
+    cidade:         Cidade 4
+    bairro:        Bairro 4
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+
+
+
+User(usuario5):
+    email:        usuario5@gmail.com
+    password:        secret
+    fullname:        User_usuario5
+
+Post(usuario5Post):
+    title:        Titulo 5
+    postedAt:        2015-10-5
+    author:        usuario5
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 5.
+    cidade:         Cidade 5
+    bairro:        Bairro 5
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+
+
+
+User(usuario6):
+    email:        usuario6@gmail.com
+    password:        secret
+    fullname:        User_usuario6
+
+Post(usuario6Post):
+    title:        Titulo 6
+    postedAt:        2015-10-6
+    author:        usuario6
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 6.
+    cidade:         Cidade 6
+    bairro:        Bairro 6
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+
+
+
+User(usuario7):
+    email:        usuario7@gmail.com
+    password:        secret
+    fullname:        User_usuario7
+
+Post(usuario7Post):
+    title:        Titulo 7
+    postedAt:        2015-10-7
+    author:        usuario7
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 7.
+    cidade:         Cidade 7
+    bairro:        Bairro 7
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+
+
+
+User(usuario8):
+    email:        usuario8@gmail.com
+    password:        secret
+    fullname:        User_usuario8
+
+Post(usuario8Post):
+    title:        Titulo 8
+    postedAt:        2015-10-8
+    author:        usuario8
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 8.
+    cidade:         Cidade 8
+    bairro:        Bairro 8
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+
+
+
+User(usuario9):
+    email:        usuario9@gmail.com
+    password:        secret
+    fullname:        User_usuario9
+
+Post(usuario9Post):
+    title:        Titulo 9
+    postedAt:        2015-10-9
+    author:        usuario9
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 9.
+    cidade:         Cidade 9
+    bairro:        Bairro 9
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+
+
+
+User(usuario10):
+    email:        usuario10@gmail.com
+    password:        secret
+    fullname:        User_usuario10
+
+Post(usuario10Post):
+    title:        Titulo 10
+    postedAt:        2015-10-10
+    author:        usuario10
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 10.
+    cidade:         Cidade 10
+    bairro:        Bairro 10
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+
+
+
+    

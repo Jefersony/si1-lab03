@@ -39,6 +39,14 @@ Post(firstPost):
                     Tenho uma banda de reggae em Cajazeiras - PB e procuro um baterista. Somos uma banda muito solicitada 
                     e por isso, precisamos que o novo integrante possua uma boa experiência com o instrumento. 
                     
+    cidade:         Cajazeiras
+    bairro:         Alto Cabelao
+    strInstrumentos: Baixo
+    strEstilosQueGosta: Rock, Pop, Eletronica
+    strEstilosQueNaoGosta: Funk, Axe, Pagode
+    procuraBanda:   true
+    
+    
 Post(jeffPost):
     title:          Precisa-se de baixista - CG 
     postedAt:       2009-06-06
@@ -53,4 +61,9 @@ Post(jeffPost):
                     Assim precisamos que alguém que toca baixo e estiver interessado em ingressar numa banda se manifeste.
                     Estaremos esperando.
                     
-
+    cidade:         Campina Grande
+    bairro:         Bela Vista
+    strInstrumentos: Guitarra
+    strEstilosQueGosta: Rock, Pop, Eletronica
+    strEstilosQueNaoGosta: Funk, Axe, Pagode
+    procuraBanda:   true
