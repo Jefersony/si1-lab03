@@ -294,3 +294,573 @@ Post(usuario10Post):
 
 
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+User(usuario11):
+    email:        usuario11@gmail.com
+    password:        secret
+    fullname:        User_usuario11
+
+Post(usuario11Post):
+    title:        Titulo 11
+    postedAt:        2015-10-11
+    author:        usuario11
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 11.
+    cidade:         Cidade 11
+    bairro:        Bairro 11
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario11):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario11Post
+
+Comment(comentario_2_de_usuario11):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario11Post
+
+
+
+User(usuario12):
+    email:        usuario12@gmail.com
+    password:        secret
+    fullname:        User_usuario12
+
+Post(usuario12Post):
+    title:        Titulo 12
+    postedAt:        2015-10-12
+    author:        usuario12
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 12.
+    cidade:         Cidade 12
+    bairro:        Bairro 12
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario12):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario12Post
+
+Comment(comentario_2_de_usuario12):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario12Post
+
+
+
+User(usuario13):
+    email:        usuario13@gmail.com
+    password:        secret
+    fullname:        User_usuario13
+
+Post(usuario13Post):
+    title:        Titulo 13
+    postedAt:        2015-10-13
+    author:        usuario13
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 13.
+    cidade:         Cidade 13
+    bairro:        Bairro 13
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario13):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario13Post
+
+Comment(comentario_2_de_usuario13):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario13Post
+
+
+
+User(usuario14):
+    email:        usuario14@gmail.com
+    password:        secret
+    fullname:        User_usuario14
+
+Post(usuario14Post):
+    title:        Titulo 14
+    postedAt:        2015-10-14
+    author:        usuario14
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 14.
+    cidade:         Cidade 14
+    bairro:        Bairro 14
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario14):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario14Post
+
+Comment(comentario_2_de_usuario14):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario14Post
+
+
+
+User(usuario15):
+    email:        usuario15@gmail.com
+    password:        secret
+    fullname:        User_usuario15
+
+Post(usuario15Post):
+    title:        Titulo 15
+    postedAt:        2015-10-15
+    author:        usuario15
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 15.
+    cidade:         Cidade 15
+    bairro:        Bairro 15
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario15):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario15Post
+
+Comment(comentario_2_de_usuario15):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario15Post
+
+
+
+User(usuario16):
+    email:        usuario16@gmail.com
+    password:        secret
+    fullname:        User_usuario16
+
+Post(usuario16Post):
+    title:        Titulo 16
+    postedAt:        2015-10-16
+    author:        usuario16
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 16.
+    cidade:         Cidade 16
+    bairro:        Bairro 16
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario16):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario16Post
+
+Comment(comentario_2_de_usuario16):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario16Post
+
+
+
+User(usuario17):
+    email:        usuario17@gmail.com
+    password:        secret
+    fullname:        User_usuario17
+
+Post(usuario17Post):
+    title:        Titulo 17
+    postedAt:        2015-10-17
+    author:        usuario17
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 17.
+    cidade:         Cidade 17
+    bairro:        Bairro 17
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario17):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario17Post
+
+Comment(comentario_2_de_usuario17):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario17Post
+
+
+
+User(usuario18):
+    email:        usuario18@gmail.com
+    password:        secret
+    fullname:        User_usuario18
+
+Post(usuario18Post):
+    title:        Titulo 18
+    postedAt:        2015-10-18
+    author:        usuario18
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 18.
+    cidade:         Cidade 18
+    bairro:        Bairro 18
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario18):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario18Post
+
+Comment(comentario_2_de_usuario18):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario18Post
+
+
+
+User(usuario19):
+    email:        usuario19@gmail.com
+    password:        secret
+    fullname:        User_usuario19
+
+Post(usuario19Post):
+    title:        Titulo 19
+    postedAt:        2015-10-19
+    author:        usuario19
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 19.
+    cidade:         Cidade 19
+    bairro:        Bairro 19
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario19):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario19Post
+
+Comment(comentario_2_de_usuario19):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario19Post
+
+
+
+User(usuario20):
+    email:        usuario20@gmail.com
+    password:        secret
+    fullname:        User_usuario20
+
+Post(usuario20Post):
+    title:        Titulo 20
+    postedAt:        2015-10-20
+    author:        usuario20
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 20.
+    cidade:         Cidade 20
+    bairro:        Bairro 20
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario20):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario20Post
+
+Comment(comentario_2_de_usuario20):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario20Post
+
+
+
+User(usuario21):
+    email:        usuario21@gmail.com
+    password:        secret
+    fullname:        User_usuario21
+
+Post(usuario21Post):
+    title:        Titulo 21
+    postedAt:        2015-10-21
+    author:        usuario21
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 21.
+    cidade:         Cidade 21
+    bairro:        Bairro 21
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario21):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario21Post
+
+Comment(comentario_2_de_usuario21):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario21Post
+
+
+
+User(usuario22):
+    email:        usuario22@gmail.com
+    password:        secret
+    fullname:        User_usuario22
+
+Post(usuario22Post):
+    title:        Titulo 22
+    postedAt:        2015-10-22
+    author:        usuario22
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 22.
+    cidade:         Cidade 22
+    bairro:        Bairro 22
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario22):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario22Post
+
+Comment(comentario_2_de_usuario22):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario22Post
+
+
+
+User(usuario23):
+    email:        usuario23@gmail.com
+    password:        secret
+    fullname:        User_usuario23
+
+Post(usuario23Post):
+    title:        Titulo 23
+    postedAt:        2015-10-23
+    author:        usuario23
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 23.
+    cidade:         Cidade 23
+    bairro:        Bairro 23
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario23):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario23Post
+
+Comment(comentario_2_de_usuario23):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario23Post
+
+
+
+User(usuario24):
+    email:        usuario24@gmail.com
+    password:        secret
+    fullname:        User_usuario24
+
+Post(usuario24Post):
+    title:        Titulo 24
+    postedAt:        2015-10-24
+    author:        usuario24
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 24.
+    cidade:         Cidade 24
+    bairro:        Bairro 24
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario24):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario24Post
+
+Comment(comentario_2_de_usuario24):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario24Post
+
+
+
+User(usuario25):
+    email:        usuario25@gmail.com
+    password:        secret
+    fullname:        User_usuario25
+
+Post(usuario25Post):
+    title:        Titulo 25
+    postedAt:        2015-10-25
+    author:        usuario25
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 25.
+    cidade:         Cidade 25
+    bairro:        Bairro 25
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario25):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario25Post
+
+Comment(comentario_2_de_usuario25):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario25Post
+
+
+
+User(usuario26):
+    email:        usuario26@gmail.com
+    password:        secret
+    fullname:        User_usuario26
+
+Post(usuario26Post):
+    title:        Titulo 26
+    postedAt:        2015-10-26
+    author:        usuario26
+    tags:        
+             - guitarra
+
+    content:        Conteudo do Anuncio 26.
+    cidade:         Cidade 26
+    bairro:        Bairro 26
+    strInstrumentos:        Varios instrumentos
+    strEstilosQueGosta:        Varios estilos
+    strEstilosQueNaoGosta:        Varios estilos
+    procuraBanda:        true
+    finalizado:        true
+
+Comment(comentario_1_de_usuario26):
+    author:        Nome_do_interessado
+    postedAt:        2015-09-29
+    content:        Proposta do interessado.
+    post:        usuario26Post
+
+Comment(comentario_2_de_usuario26):
+    author:        Nome_do_anunciante
+    postedAt:        2015-09-29
+    content:        Resposta do anunciante.
+    post:        usuario26Post
+
+
+
+

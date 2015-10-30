@@ -62,6 +62,14 @@ public class Post extends Model {
     	this.strEstilosQueNaoGosta = strEstilosQueNaoGosta;
     	this.procuraBanda = procuraBanda;
     }
+ // Construtor criado pra inserir anuncios ja finalizados na inicializacao
+    public Post(User author, String title, String content, 
+    		String cidade, String bairro, String strInstrumentos, 
+    		String strEstilosQueGosta, String strEstilosQueNaoGosta, 
+    		boolean procuraBanda, boolean finalizado){
+    	this(author, title, content, cidade, bairro, strInstrumentos, strEstilosQueGosta, strEstilosQueNaoGosta, procuraBanda);
+    	this.finalizado = finalizado; 
+    }
     
     public Post addComment(String author, String content) {
         Comment newComment = new Comment(this, author, content);
