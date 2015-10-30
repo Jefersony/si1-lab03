@@ -1,3 +1,5 @@
+import static org.junit.Assert.*;
+
 import org.junit.*;
 
 import java.util.*;
@@ -191,5 +193,21 @@ public class BasicTest extends UnitTest {
         assertEquals("[{tag=Blue, pound=1}, {tag=Green, pound=1}, {tag=Red, pound=2}]", cloud.toString());
         
     }
+    
+    @Test
+	public void testaFinalizarAnuncio() throws Exception {
+    	User bob = new User("bob@gmail.com", "secret", "Bob").save();
+        // Novo anuncio
+        Post bobPost = new Post(bob, "My first post", "Hello world").save();
+
+        // Posta comentarios
+        new Comment(bobPost, "Jeff", "Nice post").save();
+        new Comment(bobPost, "Tom", "I knew that !").save();
+        
+        bobPost.finalizado = true;
+        
+        assertTrue(bobPost.finalizado);
+		
+	}
  
 }

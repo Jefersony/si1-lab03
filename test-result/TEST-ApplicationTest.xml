@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<testsuite failures="0" time="0.276" errors="0" skipped="0" tests="3" name="ApplicationTest">
-  <testcase classname="ApplicationTest" name="testaAdminSecurity" time="0.033">
+<testsuite failures="0" time="0.406" errors="0" skipped="0" tests="3" name="ApplicationTest">
+  <testcase classname="ApplicationTest" name="testaAdminSecurity" time="0.063">
       </testcase>
-  <testcase classname="ApplicationTest" name="testaSePaginasHTMLFuncionam" time="0.185">
+  <testcase classname="ApplicationTest" name="testaSePaginasHTMLFuncionam" time="0.265">
       </testcase>
-  <testcase classname="ApplicationTest" name="testaSeIndexFunciona" time="0.058">
+  <testcase classname="ApplicationTest" name="testaSeIndexFunciona" time="0.078">
       </testcase>
 </testsuite>

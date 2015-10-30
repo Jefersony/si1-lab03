@@ -1,48 +1,143 @@
-30 Out 2015 02:40:50,620 INFO  ~ Starting C:\Play\Playcomgit\lab2
-30 Out 2015 02:40:51,082 INFO  ~ Module crud is available (C:\play1-1.3.0\modules\crud)
-30 Out 2015 02:40:51,084 INFO  ~ Module secure is available (C:\play1-1.3.0\modules\secure)
-30 Out 2015 02:40:52,175 WARN  ~ You're running Play! in DEV mode
-30 Out 2015 02:40:52,276 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
-30 Out 2015 02:41:05,745 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL for default
-30 Out 2015 02:41:06,895 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
-30 Out 2015 02:41:06,895 ERROR ~ Table "COMMENT" not found; SQL statement:
+30 Out 2015 14:19:52,850 INFO  ~ Starting C:\Play\Playcomgit\lab2
+30 Out 2015 14:19:53,882 INFO  ~ Module crud is available (C:\play1-1.3.0\modules\crud)
+30 Out 2015 14:19:53,882 INFO  ~ Module secure is available (C:\play1-1.3.0\modules\secure)
+30 Out 2015 14:19:55,677 WARN  ~ You're running Play! in DEV mode
+30 Out 2015 14:19:55,964 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+30 Out 2015 14:20:14,735 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL for default
+30 Out 2015 14:20:16,622 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+30 Out 2015 14:20:16,623 ERROR ~ Table "COMMENT" not found; SQL statement:
 alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
-30 Out 2015 02:41:06,896 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
-30 Out 2015 02:41:06,896 ERROR ~ Table "POST" not found; SQL statement:
+30 Out 2015 14:20:16,623 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+30 Out 2015 14:20:16,624 ERROR ~ Table "POST" not found; SQL statement:
 alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
-30 Out 2015 02:41:06,896 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
-30 Out 2015 02:41:06,897 ERROR ~ Table "POST_TAG" not found; SQL statement:
+30 Out 2015 14:20:16,624 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
+30 Out 2015 14:20:16,625 ERROR ~ Table "POST_TAG" not found; SQL statement:
 alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
-30 Out 2015 02:41:06,897 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
-30 Out 2015 02:41:06,897 ERROR ~ Table "POST_TAG" not found; SQL statement:
+30 Out 2015 14:20:16,625 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
+30 Out 2015 14:20:16,626 ERROR ~ Table "POST_TAG" not found; SQL statement:
 alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
-30 Out 2015 02:41:07,011 INFO  ~ Application 'Find Bandmate' is now started !
-30 Out 2015 02:41:09,600 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
-30 Out 2015 02:41:24,352 ERROR ~ 
-
-@6o1cdn0k7
-Internal Server Error (500) for request GET /posts/14
-
-Template execution error (In /app/views/Application/show.html around line 2)
-Execution error occured in template /app/views/Application/show.html. Exception raised was NullPointerException : Cannot get property 'title' on null object.
-
-play.exceptions.TemplateExecutionException: Cannot get property 'title' on null object
-	at play.templates.BaseTemplate.throwException(BaseTemplate.java:86)
-	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:285)
-	at play.templates.Template.render(Template.java:26)
-	at play.templates.GroovyTemplate.render(GroovyTemplate.java:208)
-	at play.mvc.results.RenderTemplate.<init>(RenderTemplate.java:24)
-	at play.mvc.Controller.renderTemplate(Controller.java:676)
-	at play.mvc.Controller.renderTemplate(Controller.java:656)
-	at play.mvc.Controller.render(Controller.java:713)
-	at controllers.Application.show(Application.java:31)
-	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:524)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:475)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:451)
-	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:446)
-	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:160)
-	at Invocation.HTTP Request(Play!)
-Caused by: java.lang.NullPointerException: Cannot get property 'title' on null object
-	at /app/views/Application/show.html.(line:2)
-	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:260)
-	... 13 more
+30 Out 2015 14:20:16,850 INFO  ~ Application 'Find Bandmate' is now started !
+30 Out 2015 14:20:25,625 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+30 Out 2015 14:36:20,385 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+30 Out 2015 14:36:20,385 ERROR ~ Table "COMMENT" not found; SQL statement:
+alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
+30 Out 2015 14:36:20,385 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+30 Out 2015 14:36:20,385 ERROR ~ Table "POST" not found; SQL statement:
+alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
+30 Out 2015 14:36:20,385 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
+30 Out 2015 14:36:20,385 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
+30 Out 2015 14:36:20,385 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
+30 Out 2015 14:36:20,385 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
+30 Out 2015 14:36:21,807 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+30 Out 2015 14:47:10,167 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+30 Out 2015 14:47:10,167 ERROR ~ Table "COMMENT" not found; SQL statement:
+alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
+30 Out 2015 14:47:10,167 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+30 Out 2015 14:47:10,167 ERROR ~ Table "POST" not found; SQL statement:
+alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
+30 Out 2015 14:47:10,167 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
+30 Out 2015 14:47:10,167 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
+30 Out 2015 14:47:10,167 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
+30 Out 2015 14:47:10,167 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
+30 Out 2015 14:47:11,146 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+30 Out 2015 14:47:13,991 WARN  ~ SQL Error: 50200, SQLState: HYT00
+30 Out 2015 14:47:13,991 ERROR ~ Timeout trying to lock table "POST"; SQL statement:
+select post0_.id as id1_1_, post0_.author_id as author_12_1_, post0_.bairro as bairro2_1_, post0_.cidade as cidade3_1_, post0_.content as content4_1_, post0_.finalizado as finaliza5_1_, post0_.postedAt as postedAt6_1_, post0_.procuraBanda as procuraB7_1_, post0_.strEstilosQueGosta as strEstil8_1_, post0_.strEstilosQueNaoGosta as strEstil9_1_, post0_.strInstrumentos as strInst10_1_, post0_.title as title11_1_ from Post post0_ order by post0_.postedAt desc limit ? [50200-176]
+30 Out 2015 14:49:15,205 WARN  ~ SQL Error: 50200, SQLState: HYT00
+30 Out 2015 14:49:15,205 ERROR ~ Timeout trying to lock table "POST"; SQL statement:
+select post0_.id as id1_1_, post0_.author_id as author_12_1_, post0_.bairro as bairro2_1_, post0_.cidade as cidade3_1_, post0_.content as content4_1_, post0_.finalizado as finaliza5_1_, post0_.postedAt as postedAt6_1_, post0_.procuraBanda as procuraB7_1_, post0_.strEstilosQueGosta as strEstil8_1_, post0_.strEstilosQueNaoGosta as strEstil9_1_, post0_.strInstrumentos as strInst10_1_, post0_.title as title11_1_ from Post post0_ order by post0_.postedAt desc limit ? [50200-176]
+30 Out 2015 14:50:11,371 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+30 Out 2015 14:50:11,387 ERROR ~ Table "COMMENT" not found; SQL statement:
+alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
+30 Out 2015 14:50:11,387 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+30 Out 2015 14:50:11,387 ERROR ~ Table "POST" not found; SQL statement:
+alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
+30 Out 2015 14:50:11,387 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
+30 Out 2015 14:50:11,387 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
+30 Out 2015 14:50:11,387 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
+30 Out 2015 14:50:11,387 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
+30 Out 2015 14:50:12,543 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+30 Out 2015 14:56:26,278 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+30 Out 2015 14:56:26,278 ERROR ~ Table "COMMENT" not found; SQL statement:
+alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
+30 Out 2015 14:56:26,278 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+30 Out 2015 14:56:26,278 ERROR ~ Table "POST" not found; SQL statement:
+alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
+30 Out 2015 14:56:26,278 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
+30 Out 2015 14:56:26,278 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
+30 Out 2015 14:56:26,294 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
+30 Out 2015 14:56:26,294 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
+30 Out 2015 14:56:27,193 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+30 Out 2015 15:17:52,226 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+30 Out 2015 15:17:52,226 ERROR ~ Table "COMMENT" not found; SQL statement:
+alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
+30 Out 2015 15:17:52,226 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+30 Out 2015 15:17:52,226 ERROR ~ Table "POST" not found; SQL statement:
+alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
+30 Out 2015 15:17:52,226 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
+30 Out 2015 15:17:52,226 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
+30 Out 2015 15:17:52,226 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
+30 Out 2015 15:17:52,241 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
+30 Out 2015 15:17:53,235 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+30 Out 2015 15:34:17,098 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+30 Out 2015 15:34:17,098 ERROR ~ Table "COMMENT" not found; SQL statement:
+alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
+30 Out 2015 15:34:17,098 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+30 Out 2015 15:34:17,098 ERROR ~ Table "POST" not found; SQL statement:
+alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
+30 Out 2015 15:34:17,098 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
+30 Out 2015 15:34:17,098 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
+30 Out 2015 15:34:17,098 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
+30 Out 2015 15:34:17,098 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
+30 Out 2015 15:34:17,993 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+30 Out 2015 15:39:31,660 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+30 Out 2015 15:39:31,660 ERROR ~ Table "COMMENT" not found; SQL statement:
+alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
+30 Out 2015 15:39:31,660 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+30 Out 2015 15:39:31,660 ERROR ~ Table "POST" not found; SQL statement:
+alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
+30 Out 2015 15:39:31,660 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
+30 Out 2015 15:39:31,660 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
+30 Out 2015 15:39:31,660 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
+30 Out 2015 15:39:31,660 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
+30 Out 2015 15:39:32,779 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+30 Out 2015 15:40:23,420 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+30 Out 2015 15:40:23,420 ERROR ~ Table "COMMENT" not found; SQL statement:
+alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
+30 Out 2015 15:40:23,420 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+30 Out 2015 15:40:23,420 ERROR ~ Table "POST" not found; SQL statement:
+alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
+30 Out 2015 15:40:23,420 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
+30 Out 2015 15:40:23,420 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
+30 Out 2015 15:40:23,420 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
+30 Out 2015 15:40:23,420 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
+30 Out 2015 15:40:24,241 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+30 Out 2015 16:03:26,603 ERROR ~ HHH000389: Unsuccessful: alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5
+30 Out 2015 16:03:26,603 ERROR ~ Table "COMMENT" not found; SQL statement:
+alter table Comment drop constraint FK_apirq8ka64iidc18f3k6x5tc5 [42102-176]
+30 Out 2015 16:03:26,603 ERROR ~ HHH000389: Unsuccessful: alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi
+30 Out 2015 16:03:26,603 ERROR ~ Table "POST" not found; SQL statement:
+alter table Post drop constraint FK_m7j5gwmpa7dklv5bnc41ertmi [42102-176]
+30 Out 2015 16:03:26,603 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm
+30 Out 2015 16:03:26,603 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_t0ml4xx4nhnqjwrhxugwlvrpm [42102-176]
+30 Out 2015 16:03:26,603 ERROR ~ HHH000389: Unsuccessful: alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6
+30 Out 2015 16:03:26,603 ERROR ~ Table "POST_TAG" not found; SQL statement:
+alter table Post_Tag drop constraint FK_ex1oknil4le2tootduvjnllp6 [42102-176]
+30 Out 2015 16:03:27,296 WARN  ~ [DEPRECATION] Encountered positional parameter near line 1, column 70.  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
